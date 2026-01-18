@@ -1,0 +1,12 @@
+spring:
+  cloud:
+    nacos:
+      discovery:
+        enabled: true
+        server-addr: 192.168.33.10:8848
+        namespace: public
+#        username: nacos
+#        password: nacos
+#        # Add other discovery-specific properties here if needed
+        group: DEFAULT_GROUP
+#        cluster-name: DEFAULT

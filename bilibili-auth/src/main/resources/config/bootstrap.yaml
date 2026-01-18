@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: bilibili-auth-service
+
+  cloud:
+    nacos:
+      # 服务发现配置
+      discovery:
+        server-addr: 192.168.33.10:8848
+        namespace: public
+        group: DEFAULT_GROUP
+#        username: nacos
+#        password: nacos
+##       配置中心配置
+      config:
+        server-addr: 192.168.33.10:8848
+        namespace: public
+        group: DEFAULT_GROUP
+        file-extension: yaml
+#        username: nacos
+#        password: nacos
+#    config:
+#      import: optional:nacos:${spring.application.name}.${spring.cloud.nacos.config.file-extension}

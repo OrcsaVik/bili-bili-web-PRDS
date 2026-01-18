@@ -1,0 +1,28 @@
+
+server:
+  port: 8003 # 项目启动的端口
+
+
+spring:
+
+  redis:
+    database: 0 # Redis 数据库索引（默认为 0）
+    host: 192.168.33.10
+    #Redis 服务器地址
+    port: 6379 # Redis 服务器连接端口
+  #      password: qwe123!@# # Redis 服务器连接密码（默认为空）
+
+  profiles:
+    active: dev
+  application:
+    name: bilibili-oss-service
+  main:
+    lazy-initialization: true
+
+
+storage:
+  minio:
+    endpoint: http://192.168.33.10:9000
+    access-key: root
+    secret-key: root
+    bucket-name: raw-video
